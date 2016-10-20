@@ -175,7 +175,7 @@ begin
   //Init Acinerella
   pInstance := ac_init;
   pInstance^.output_format := AC_OUTPUT_RGBA32;
-  ac_open(pInstance, self, nil, @read_proc, nil, nil);
+  ac_open(pInstance, self, nil, @read_proc, nil, nil,nil);
 
   SetLength(pDecoders, pInstance^.stream_count);
 
